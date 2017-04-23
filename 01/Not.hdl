@@ -1,0 +1,26 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Not.hdl
+
+
+// second part of statement is the current chip you're building
+// so "a = in" means that for the current part/sub-chip, link the input
+// for the current chip you're building to the a input for the part/sub-chip
+
+/**
+ * Not gate:
+ * out = not in
+ */
+
+CHIP Not {
+    IN in;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    Nand(a = in , b = in, out = out);
+
+}
+
+// Passed tests
